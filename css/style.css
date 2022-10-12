@@ -10,6 +10,14 @@
     padding: 0;
 }
 
+h1 {
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
 h4 {
     display: inline-block;
     padding: .5rem .5rem;
@@ -24,6 +32,10 @@ body {
 
 footer {
     flex-shrink: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
     z-index: 6;
     background-color: var(--bg-footer);
 }
@@ -91,6 +103,7 @@ a {
 .main-container {
     flex-grow: 1;
     background-color: var(--bg-main);
+    overflow: auto;
 }
 
 .nav-header {
@@ -117,6 +130,20 @@ a {
     margin: 1.5rem;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.col {
+    padding: 0.5rem;
+}
+
+.col-1_2 {
+    flex-basis: 50%;
+}
+
 .color-grey {
     color: rgb(163 163 163);
     ;
@@ -124,6 +151,20 @@ a {
 
 .color-white {
     color: white;
+}
+
+.img-card {
+    width: 100%
+}
+
+.title {
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.subtitle {
+    padding: 0rem 0rem 1rem;
+    text-align: center;
 }
 
 .p-1 {

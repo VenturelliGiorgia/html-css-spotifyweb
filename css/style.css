@@ -32,10 +32,12 @@ body {
 
 footer {
     flex-shrink: 0;
-    position: fixed;
-    right: 0;
+    height: 80px;
+    position: absolute;
     left: 0;
+    right: 0;
     bottom: 0;
+
     z-index: 6;
     background-color: var(--bg-footer);
 }
@@ -51,7 +53,9 @@ a {
 
 .top-container {
     flex-grow: 1;
+    height: calc(100vh - 80px);
     display: flex;
+    position: relative;
 }
 
 .sidebar {
@@ -106,6 +110,10 @@ a {
     padding: 1rem 1rem 0rem;
 }
 
+.color-svg {
+    filter: invert(71%) sepia(25%) saturate(0%) hue-rotate(180deg) brightness(87%) contrast(94%);
+}
+
 .list-item-icon {
     font-size: 30px;
     padding: .9rem .9rem 0;
@@ -121,6 +129,7 @@ a {
     margin-left: 4rem;
     background-color: var(--bg-main);
     overflow: auto;
+    padding-bottom: 100px;
 }
 
 .nav-header {
@@ -171,11 +180,6 @@ a {
 
 .img-card {
     width: 100%;
-}
-
-.img-card:hover {
-    opacity: 4;
-
 }
 
 .title {
@@ -243,7 +247,6 @@ hr {
 }
 
 .progress-container {
-    padding: 1rem;
     display: flex;
     align-items: center;
     width: 350px;
@@ -267,4 +270,16 @@ hr {
 
 .play-menu .pl-1 {
     padding-left: 1.5rem;
+}
+
+h4:hover {
+    color: white;
+}
+
+.image-small:hover .color-svg {
+    filter: none;
+}
+
+.list-item-text:hover {
+    color: white;
 }

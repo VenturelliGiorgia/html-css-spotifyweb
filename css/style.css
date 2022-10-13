@@ -32,12 +32,17 @@ body {
 
 footer {
     flex-shrink: 0;
+    height: 100px;
     position: fixed;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: 6;
     background-color: var(--bg-footer);
+}
+
+img {
+    display: block;
 }
 
 a {
@@ -53,9 +58,15 @@ a {
 .sidebar {
     width: 4rem;
     flex-shrink: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 100px;
     z-index: 5;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: black;
 }
 
@@ -75,7 +86,6 @@ a {
 
 .bottom-section {
     flex-shrink: 0;
-    display: none;
 }
 
 .logo-large {
@@ -90,6 +100,13 @@ a {
     margin: 0 auto;
 }
 
+.image-small {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 0rem;
+}
+
 .list-item-icon {
     font-size: 30px;
     padding: .9rem .9rem 0;
@@ -102,6 +119,7 @@ a {
 
 .main-container {
     flex-grow: 1;
+    margin-left: 4rem;
     background-color: var(--bg-main);
     overflow: auto;
 }
@@ -146,7 +164,6 @@ a {
 
 .color-grey {
     color: rgb(163 163 163);
-    ;
 }
 
 .color-white {
@@ -154,7 +171,12 @@ a {
 }
 
 .img-card {
-    width: 100%
+    width: 100%;
+}
+
+.img-card:hover {
+    opacity: 4;
+
 }
 
 .title {
@@ -168,7 +190,7 @@ a {
 }
 
 .p-1 {
-    padding: .7rem 1rem 0;
+    padding: 1rem 1rem 0;
 }
 
 .pb-1 {

@@ -4,6 +4,10 @@
         font-size: 1rem;
     }
 
+    .main-container {
+        margin-left: 225px;
+    }
+
     .logo-large {
         display: block;
     }
@@ -18,10 +22,11 @@
 
     .middle-section {
         display: inline-block;
+        color: rgb(163 163 163);
     }
 
-    .bottom-section {
-        display: inline-block;
+    .bottom-section .image-small {
+        padding: 0rem 1rem;
     }
 
     .list-item-icon {
@@ -35,13 +40,13 @@
 }
 
 @media screen and (min-width: 768px) {
-    .col-md-1_4{
+    .col-md-1_4 {
         flex-basis: calc(100%/4);
     }
 }
 
 @media screen and (min-width: 992px) {
     .col-lg-1_6 {
-            flex-basis: calc(100%/6);
-        }
+        flex-basis: calc(100%/6);
+    }
 }

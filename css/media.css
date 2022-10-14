@@ -41,11 +41,48 @@
     hr {
         display: block;
     }
+
+    .icon-right-menu .pl-1 {
+        padding-left: 1rem;
+    }
+
+    .middle-footer .progress-container {
+        width: 220px;
+    }
+
+    .right-footer .progress-container {
+        width: 100px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .col-md-1_4 {
         flex-basis: calc(100%/4);
+    }
+
+    .icon-footer-container {
+        display: flex;
+    }
+
+    .pl-05 {
+        padding-left: .5rem;
+    }
+
+    .play-menu {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .play-menu .pl-1 {
+        padding-left: 1.5rem;
+    }
+
+    .middle-footer .progress-container {
+        width: 350px;
+    }
+
+    .icon-right-menu {
+        padding: 1rem;
     }
 }
 
